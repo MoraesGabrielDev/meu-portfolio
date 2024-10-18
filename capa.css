@@ -113,6 +113,31 @@ margin-right: 1em;
   }
 }
 
+
+@media screen and (max-width: 430px) {
+  .imagem_capa.reveal{
+    display: none;
+   }
+ 
+   .titulo_capa{
+     font-size: 1.35em;
+   }
+   
+   .capa{
+     margin: 8em 0em 8em 0;
+     transform: translateX(-12%);
+   }
+ 
+   .link_capa{
+     padding: 0.1em;
+     font-size: 0.9em;
+     margin: 1.5em 0 1.5em 0;
+   }
+ }
+
+
+
+
 @media screen and (max-width: 428px) {
   .imagem_capa.reveal{
    display: none;
@@ -131,5 +156,23 @@ margin-right: 1em;
     padding: 0.1em;
     font-size: 0.9em;
     margin: 1.5em 0 1.5em 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .capa{
+    margin: 8em 0em 8em 0;
+    transform: translateX(-10%);
+  }
+
+  .titulo_capa{
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .capa{
+    margin: 8em 0em 8em 0;
+    transform: translateX(-13%);
   }
 }
