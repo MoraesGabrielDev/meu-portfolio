@@ -59,6 +59,32 @@
   }
 }
 
+@media screen and (max-width:430px) {
+  .titulo_sobre_mim{
+    font-size: 1.3em;
+    justify-content: center;
+    
+  }
+
+  .descrição_sobre_mim{
+    display: none;
+  }
+  
+  .descriçao_mobile{
+    display: block;
+    color: var(--branco);
+    font-family: var(--fonte-textos);
+    color: var(--branco);
+    font-size: 1em;
+    margin: 2em 0 2em 1.7em;
+  }
+
+  .lista_habilidades i{
+    display: none;
+  }
+  
+}
+
 
 @media screen and (max-width: 428px) {
   .titulo_sobre_mim{
@@ -87,3 +113,17 @@
   
  
 }
+
+@media screen and (max-width: 390px) {
+  .descriçao_mobile{
+    display: block;
+    color: var(--branco);
+    font-family: var(--fonte-textos);
+    color: var(--branco);
+    font-size: 0.8em;
+    margin: 2em 2em 2em 2.5em;
+    transform: translateX(3%);
+  }
+
+}
+
