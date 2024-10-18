@@ -1,0 +1,140 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: black;
+  border-bottom: 2px solid #b22222;
+}
+
+
+
+.titulo_header{
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: var(--fonte-cabeçalho);
+  align-items: center;
+ 
+}
+
+.lista_header{
+  display: flex;
+  list-style: none;
+ 
+}
+  
+
+.nav-item{
+  color: var(--branco);
+  font-family: var(--fonte-cabeçalho);
+  font-size: 1.3em;
+  margin: 0.4em 0 0 3.5em;
+  
+
+}
+
+.nav-link{
+  text-decoration: none;
+  color: var(--branco);
+ 
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white; /* Cor inicial do link */
+  text-decoration: none;
+  transition: color 0.6s ease-in-out; /* Transição suave para a cor do link */
+  background: none; /* Mantém o fundo inicial sem gradiente */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: currentColor; /* Permite a cor inicial funcionar */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--vermelho); /* Cor da linha vermelha */
+  transition: width 0.4s ease; /* Animação suave da linha */
+}
+
+.nav-link:hover {
+  color: transparent; /* Para aplicar o gradiente no texto */
+  background: var(--vermelho) ;/* Gradiente no texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Preenchimento transparente para exibir o gradiente */
+}
+
+.link_header:hover::after {
+  width: 100%; /* Expande a linha no hover */
+}
+
+
+
+@media screen and (max-width: 1728px) {
+
+  .header{
+    background: black
+  }
+
+
+.titulo_header{
+  font-size: 1.8em;
+  
+}
+
+.nav-item{
+  font-size: 1.3em;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .header{
+    background: black
+  }
+
+
+.titulo_header{
+  font-size: 1.3em;
+  
+}
+
+.nav-item{
+  font-size: 0.9em;
+}
+}
+
+@media screen and (max-width: 428px) {
+
+  .header{
+    background: black
+  }
+
+
+.titulo_header{
+ display: none;
+  
+}
+
+.nav-item{
+  font-size: 0.7em;
+}
+
+.header{
+width:560px;
+transform: translateX(-5%);
+}
+  
+  
+}
+

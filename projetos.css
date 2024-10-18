@@ -1,0 +1,216 @@
+.area_projetos_descritos{
+  margin: 15em 0em;
+ display: flex;
+ justify-content: center;
+
+}
+
+.card_descrição_projeto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #232323;
+  width: 1300px;
+  height: 300px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.paragrafo_descriçao{
+  font-family: var(--fonte-cabeçalho);
+  color: var(--branco);
+  font-size: 1.3em;
+  margin: 0 2em;
+ 
+}
+
+.titulo_tecnologias{
+  color: var(--branco);
+  font-family: var(--fonte-cabeçalho);
+  font-size: 1.25em;
+  margin: 1em 1em;
+}
+
+.tecnologias{
+  display: flex;
+  color: var(--branco);
+ justify-content: center;
+ 
+}
+
+.fa-brands{
+   /* Tamanho do ícone */
+            margin: 20px; /* Espaçamento entre ícones */
+            animation: colorChange 4s linear infinite;  /* Animação de cor */
+}
+
+
+.icon-html {
+  animation: htmlColorChange 6s ease infinite;
+}
+@keyframes htmlColorChange {
+  0% { color: #B22222; }    /* Firebrick */
+  25% { color: #FF6347; }   /* Tomato */
+  50% { color: #FFD700; }   /* Gold */
+  75% { color: #FF4500; }   /* Orange Red */
+  100% { color: #B22222; }   /* Firebrick */
+}
+
+/* Animação para o ícone CSS */
+.icon-css {
+  animation: cssColorChange 6s ease infinite;
+}
+@keyframes cssColorChange {
+  0% { color: #1E90FF; }     /* Dodger Blue */
+  25% { color: #00BFFF; }    /* Deep Sky Blue */
+  50% { color: #00CED1; }    /* Dark Turquoise */
+  75% { color: #4682B4; }     /* Steel Blue */
+  100% { color: #1E90FF; }   /* Dodger Blue */
+}
+
+/* Animação para o ícone JavaScript */
+.icon-js {
+  animation: jsColorChange 6s ease infinite;
+}
+@keyframes jsColorChange {
+  0% { color: #F7DF1E; }      /* Yellow */
+  25% { color: #FFD700; }     /* Gold */
+  50% { color: #FFA500; }     /* Orange */
+  75% { color: #FF8C00; }     /* Dark Orange */
+  100% { color: #F7DF1E; }    /* Yellow */
+}
+
+.icon-figma {
+  color: #0ACF83; /* Cor inicial (verde) */
+  animation: figmaColors 5s infinite;
+}
+
+/* Animação de transição de cores */
+@keyframes figmaColors {
+  0% {
+      color: #0ACF83; /* Verde */
+  }
+  25% {
+      color: #A259FF; /* Roxo */
+  }
+  50% {
+      color: #F24E1E; /* Vermelho */
+  }
+  75% {
+      color: #FF7262; /* Rosa */
+  }
+  100% {
+      color: #0ACF83; /* Volta ao Verde */
+  }
+}
+
+.icon-tailwind path {
+  fill: #38BDF8; /* Cor inicial (azul) */
+  animation: tailwindColors 5s infinite;
+}
+
+/* Animação de transição de cores */
+@keyframes tailwindColors {
+  0% {
+      fill: #38BDF8; /* Azul */
+  }
+  25% {
+      fill: #06B6D4; /* Ciano */
+  }
+  50% {
+      fill: #0EA5E9; /* Azul claro */
+  }
+  75% {
+      fill: #14B8A6; /* Verde-água */
+  }
+  100% {
+      fill: #38BDF8; /* Volta ao Azul */
+  }
+}
+
+.icon-react {
+  color: #61DAFB; /* Cor inicial (azul claro do React) */
+  animation: reactColors 5s infinite;
+}
+
+/* Animação de transição de cores */
+@keyframes reactColors {
+  0% {
+      color: #61DAFB; /* Azul claro (cor oficial do React) */
+  }
+  25% {
+      color: #4DD0E1; /* Azul um pouco mais escuro */
+  }
+  50% {
+      color: #26C6DA; /* Azul intermediário */
+  }
+  75% {
+      color: #00ACC1; /* Azul ainda mais escuro */
+  }
+  100% {
+      color: #61DAFB; /* Volta ao azul claro do React */
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .video_projeto{
+  width: 600px;
+    }
+
+    .paragrafo_descriçao{
+      font-family: var(--fonte-cabeçalho);
+      color: var(--branco);
+      font-size: 1em;
+      margin: 0 1em;
+     
+    }
+
+    .titulo_tecnologias{
+      color: var(--branco);
+      font-family: var(--fonte-cabeçalho);
+      font-size: 1em;
+      margin: 1em 0.5em;
+    }
+
+    .card_descrição_projeto{
+      border-radius: 0px;
+    }
+
+   
+}
+
+@media screen and (max-width: 428px) {
+  .video_projeto{
+    width: 400px;
+    align-items: center;
+   
+    margin-bottom: 1em;
+      }
+  
+      .paragrafo_descriçao{
+        font-family: var(--fonte-cabeçalho);
+        color: var(--branco);
+        font-size: 1em;
+        margin: 0 1em;
+       
+      }
+  
+      .titulo_tecnologias{
+        color: var(--branco);
+        font-family: var(--fonte-cabeçalho);
+        font-size: 1em;
+        margin: 1em 0.5em;
+      }
+  
+      .card_descrição_projeto{
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        border-radius: 15px;
+      }
+
+     
+  
+}

@@ -1,0 +1,34 @@
+.footer{
+  background: var(--vermelho);
+ margin-top: 10em;
+}
+
+.titulo-footer{
+padding: 1em;
+text-align: center;
+color: var(--branco);
+font-family: var(--fonte-cabeçalho);
+}
+
+
+@media screen and (max-width: 1728px) {
+  .titulo-footer{
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo-footer{
+    padding: 0.5em;
+    font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 428px) {
+
+  .titulo-footer{
+    padding: 0.5em;
+    font-size: 1em;
+    }
+}

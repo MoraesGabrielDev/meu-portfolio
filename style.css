@@ -1,0 +1,33 @@
+@import url(header.css);
+@import url(capa.css);
+@import url(sobre.css);
+@import url(carrosel.css);
+@import url(projetos.css);
+@import url(habilidades.css);
+@import url(animaçao.css);
+@import url(contato.css);
+@import url(footer.css);
+:root{
+  --branco: white;
+  --fonte-cabeçalho: "Orbitron", sans-serif;
+  --fonte-principal: "Cherry Bomb One", system-ui;
+  --vermelho:linear-gradient(135deg, #B22222, #DC143C, #FF4500);
+  --fonte-textos: "Quantico", sans-serif;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(assets/smooth-gray-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

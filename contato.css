@@ -1,0 +1,126 @@
+.contato{
+  display: flex;
+ align-items: center ;
+ flex-direction: column;
+}
+
+.titulo_contato{
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: var(--fonte-cabeçalho);
+  font-size: 3em;
+}
+.descriçao_contato{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 190px;
+}
+
+.contatos{
+  text-align: center;
+}
+
+.paragrafos_contatos{
+  text-align: center;
+}
+
+
+
+.fa-whatsapp,
+.fa-envelope{
+  color: green;
+  margin: 1em 0 0.5em 0;
+}
+
+.fa-envelope{
+  color: #1E90FF;
+
+}
+
+.descriçao_paragrafos{
+  color: var(--branco);
+  font-family: var(--fonte-cabeçalho);
+  font-size: 1.3em
+}
+
+.fa-brands.pg-1{
+  display: none;
+  }
+
+  .fa-solid.pg-1{
+    display: none;
+    }
+
+
+@media screen and (max-width: 1728px) {
+ 
+
+  .fa-brands.pg-1{
+  display: none;
+  }
+
+  .fa-solid.pg-1{
+    display: none;
+    }
+
+    .descriçao_contato{
+     transform: translateX(5%);
+      gap: 150px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo_contato{
+  font-size: 2em;
+  }
+
+  .descriçao_paragrafos{
+    color: var(--branco);
+    font-family: var(--fonte-cabeçalho);
+    font-size: 1em
+  }
+
+  .fa-brands.pg-1{
+  display: none;
+  }
+
+  .fa-solid.pg-1{
+    display: none;
+    }
+
+    .descriçao_contato{
+     transform: translateX(5%);
+      gap: 150px;
+    }
+
+}
+
+@media screen and (max-width: 428px) {
+  .titulo_contato{
+    font-size: 1.3em;
+    }
+  
+    .descriçao_paragrafos{
+      color: var(--branco);
+      font-family: var(--fonte-cabeçalho);
+      font-size: 0.8em
+    }
+  
+    .fa-brands.pg-1{
+    display: none;
+    }
+  
+    .fa-solid.pg-1{
+      display: none;
+      }
+  
+      .descriçao_contato{
+       transform: translateX(5%);
+        gap: 50px;
+      }
+  
+}

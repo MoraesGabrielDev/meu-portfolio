@@ -1,0 +1,89 @@
+.sobre-mim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em;
+  
+}
+
+
+.titulo_sobre_mim{
+  font-family: var(--fonte-cabeçalho);
+  font-size: 3em;
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+
+}
+
+.descrição_sobre_mim{
+  font-family: var(--fonte-textos);
+  color: var(--branco);
+  font-size: 1.5em;
+  margin: 2em 20em;
+}
+.descriçao_mobile{
+  display: none;
+}
+
+
+@media screen and (max-width: 1728px) {
+  .titulo_sobre_mim{
+    font-size: 3em;
+  }
+
+  .descrição_sobre_mim{
+    font-size: 1.3em;
+    margin: 2em 15em;
+  }
+  .descriçao_mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo_sobre_mim{
+    font-size: 2em;
+  }
+
+  .descrição_sobre_mim{
+    font-size: 1.2em;
+    margin: 2em 10em;
+  }
+
+  .descriçao_mobile{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 428px) {
+  .titulo_sobre_mim{
+    font-size: 1.3em;
+    justify-content: center;
+    
+  }
+
+  .descrição_sobre_mim{
+    display: none;
+  }
+  
+  .descriçao_mobile{
+    display: block;
+    color: var(--branco);
+    font-family: var(--fonte-textos);
+    color: var(--branco);
+    font-size: 1em;
+    margin: 2em 0 2em 1.7em;
+  }
+
+  .lista_habilidades i{
+    display: none;
+  }
+  
+  
+ 
+}

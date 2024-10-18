@@ -1,0 +1,155 @@
+.minhas-habilidades{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5em 0;
+}
+
+.titulo_habilidades{
+  font-family: var(--fonte-cabeçalho);
+  font-size: 3em;
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 2em;
+}
+
+
+.lista_habilidades{
+  display: flex;
+  list-style: none;
+}
+
+.item_habilidades{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333, #252525);
+  margin: 5em 3em;
+  border-radius: 10px;
+}
+
+.item_habilidades {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+.item_habilidades:hover {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
+}
+
+/* Opcional: Adicionar um efeito de sombra ao passar o mouse */
+.item_habilidades:hover svg {
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.9));
+}
+
+.descriçao_lista{
+  font-family: var(--fonte-cabeçalho);
+  color: var(--branco);
+  font-size: 1.3em;
+  padding: 0.5em;
+}
+#section-mobile{
+  display: none;
+  }
+  .segunda-linha-habilidades-mobile{
+    display: none;
+    }
+
+@media screen and (max-width: 1728px) {
+
+  .minhas-habilidades{
+    margin: 3em 0;
+  }
+
+  .titulo_habilidades{
+    font-size: 3em;
+  }
+
+  .item_habilidades{
+
+    margin: 5em 3em;
+    
+  }
+  #section-mobile{
+    display: none;
+    }
+    .segunda-linha-habilidades-mobile{
+      display: none;
+      }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .minhas-habilidades{
+    margin: 3em 0;
+  }
+
+  .titulo_habilidades{
+    font-size: 2em;
+  }
+
+  .item_habilidades{
+
+    margin: 5em 1em;
+    
+  }
+  #section-mobile{
+  display: none;
+  }
+  .segunda-linha-habilidades-mobile{
+  display: none;
+  }
+}
+
+@media screen and (max-width: 428px) {
+
+  
+  .titulo_habilidades{
+    font-size: 1.3em;
+  }
+
+  .item_habilidades{
+    width: 3em;
+    margin: 2em 1em;
+   height: 4em;
+  }
+
+  .descriçao_lista{
+    text-align: center;
+    padding: 0.3;
+    margin-bottom: -10px;
+    font-size: 0.5em;
+  }
+
+
+  li.item_habilidades #pg-2 {
+    display: none !important;
+  }
+
+ #section_desk{
+  display: none;
+}
+.titulo_habilidades{
+  text-align: center;
+}
+
+.item_habilidades.tailwind{
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333, #252525);
+  margin: 2em 1em;
+  transform: translateY(-20%);
+}
+#section-mobile{
+  display: block;
+  }
+.segunda-linha-habilidades-mobile{
+  margin-top: -3em;
+  display: block;
+}
+
+}

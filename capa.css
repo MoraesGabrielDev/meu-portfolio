@@ -1,0 +1,135 @@
+.capa{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10em 20em;
+}
+
+.imagem_capa.reveal{
+  width: 40%;
+}
+
+.botoes_capa{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8em;
+}
+
+.bold_capa{
+  font-family: var(--fonte-cabeçalho);
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ 
+}
+
+.titulo_capa{
+  font-family: var(--fonte-cabeçalho);
+  color: var(--branco);
+  font-size: 4em;
+}
+
+
+.link_capa{
+  text-decoration: none;
+  color: var(--branco);
+  font-family: var(--fonte-cabeçalho);
+  background: transparent;
+  border: 2px solid var(--branco);
+  border-radius: 10px;
+  padding: 0.3em;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0.5em 0 1em 0;
+  transition: color 0.3s ease, border-color 0.3s ease;
+ 
+}
+
+.fa-github{
+margin-right: 1em;
+}
+
+.fa-linkedin{
+  margin-right: 1em;
+}
+
+.link_capa:hover{
+  background: var(--vermelho);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-color: #DC143C; /* Altera a cor da borda para combinar com o gradiente */
+}
+
+
+
+@media screen and (max-width: 1728px) {
+
+  .capa{
+    margin: 10em 10em;
+  }
+  .imagem_capa.reveal{
+    width: 40%;
+  }
+
+  .titulo_capa{
+    font-size: 2.8em;
+  }
+
+  .link_capa{
+    padding: 0.4em;
+    font-size: 1.3em;
+    margin: 1em 0 1em 0;
+  }
+
+  .botoes_capa{
+    margin-left: 7em;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .capa{
+    margin: 10em 10em;
+  }
+  .imagem_capa.reveal{
+    width: 45%;
+  }
+
+  .titulo_capa{
+    font-size: 1.8em;
+  }
+
+  .link_capa{
+    padding: 0.1em;
+    font-size: 1em;
+    margin: 1em 0 1em 0;
+  }
+
+  .botoes_capa{
+    margin-left: 7em;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .imagem_capa.reveal{
+   display: none;
+  }
+
+  .titulo_capa{
+    font-size: 1.35em;
+  }
+  
+  .capa{
+    margin: 8em 0em 8em 0;
+    transform: translateX(-14%);
+  }
+
+  .link_capa{
+    padding: 0.1em;
+    font-size: 0.9em;
+    margin: 1.5em 0 1.5em 0;
+  }
+}
