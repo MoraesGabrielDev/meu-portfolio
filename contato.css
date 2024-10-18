@@ -99,6 +99,32 @@
 
 }
 
+@media screen and (max-width: 430px) {
+  .titulo_contato{
+    font-size: 1.3em;
+    }
+  
+    .descriçao_paragrafos{
+      color: var(--branco);
+      font-family: var(--fonte-cabeçalho);
+      font-size: 0.8em
+    }
+  
+    .fa-brands.pg-1{
+    display: none;
+    }
+  
+    .fa-solid.pg-1{
+      display: none;
+      }
+  
+      .descriçao_contato{
+       transform: translateX(3%);
+        gap: 50px;
+      }
+
+}
+
 @media screen and (max-width: 428px) {
   .titulo_contato{
     font-size: 1.3em;
@@ -124,3 +150,30 @@
       }
   
 }
+
+@media screen and (max-width: 375px) {
+
+  .titulo_contato{
+    font-size: 1.3em;
+    }
+  
+    .descriçao_paragrafos{
+      color: var(--branco);
+      font-family: var(--fonte-cabeçalho);
+      font-size: 0.5em
+    }
+  
+    .fa-brands.pg-1{
+    display: none;
+    }
+  
+    .fa-solid.pg-1{
+      display: none;
+      }
+  
+      .descriçao_contato{
+       transform: translateX(5%);
+        gap: 50px;
+      }
+}
+
