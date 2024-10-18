@@ -61,6 +61,21 @@
 
 }
 
+@media screen and (max-width: 430px) {
+  .titulo_carrousel{
+    font-size: 1.3em;
+    margin: 3em 0;
+    }
+  
+    .swiper {
+      width: 80%;
+      height: 40%; 
+      margin: 2em 10em;
+      
+    }
+
+}
+
 @media screen and (max-width: 428px) {
   .titulo_carrousel{
   font-size: 1.3em;
