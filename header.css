@@ -114,6 +114,26 @@
 }
 }
 
+
+
+
+@media screen and (max-width: 430px) {
+  .titulo_header{
+    display: none;
+   }
+   .nav-item{
+    font-size: 0.8em;
+    margin: 0.4em 0 0 1em;
+    transform: translateX(10%);
+  }
+
+}
+
+
+
+
+
+
 @media screen and (max-width: 428px) {
 
   .header{
@@ -136,5 +156,19 @@ transform: translateX(-5%);
 }
   
   
+}
+
+  @media screen and (max-width: 390px) {
+  .header{
+    
+    transform: translateX(-8%);
+    }
+}
+
+@media screen and (max-width: 375px) {
+  .header{
+    
+    transform: translateX(-9.9%);
+    }
 }
 
