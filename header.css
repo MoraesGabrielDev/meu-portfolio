@@ -131,7 +131,11 @@
 
 
 
-
+@media screen and (max-width: 412px){.nav-item{
+  font-size: 0.8em;
+  margin: 0.4em 0 0 1em;
+  transform: translateX(10%);
+}}
 
 
 @media screen and (max-width: 428px) {
