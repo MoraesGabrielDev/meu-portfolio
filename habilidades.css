@@ -105,8 +105,10 @@
   }
 }
 
-@media screen and (max-width: 428px) {
-
+@media screen and (max-width: 430px) {
+  #section-mobile{
+    transform: translateX(18%);
+    }
   
   .titulo_habilidades{
     font-size: 1.3em;
@@ -114,7 +116,7 @@
 
   .item_habilidades{
     width: 3em;
-    margin: 2em 1em;
+    margin: 2em 0.5em;
    height: 4em;
   }
 
@@ -152,4 +154,75 @@
   display: block;
 }
 
+
+}
+
+@media screen and (max-width: 428px) {
+
+  #section-mobile{
+    transform: translateX(18%);
+    }
+  
+  .titulo_habilidades{
+    font-size: 1.3em;
+  }
+
+  .item_habilidades{
+    width: 3em;
+    margin: 2em 0.5em;
+   height: 4em;
+  }
+
+  .descriçao_lista{
+    text-align: center;
+    padding: 0.3;
+    margin-bottom: -10px;
+    font-size: 0.5em;
+  }
+
+
+  li.item_habilidades #pg-2 {
+    display: none !important;
+  }
+
+ #section_desk{
+  display: none;
+}
+.titulo_habilidades{
+  text-align: center;
+}
+
+.item_habilidades.tailwind{
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333, #252525);
+  margin: 2em 1em;
+  transform: translateY(-20%);
+}
+#section-mobile{
+  display: block;
+  }
+.segunda-linha-habilidades-mobile{
+  margin-top: -3em;
+  display: block;
+}
+
+}
+
+@media screen and (max-width: 390px) {
+  #section-mobile{
+  transform: translateX(15%);
+  }
+  .segunda-linha-habilidades-mobile{
+  transform: translate(-2%);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #section-mobile{
+    transform: translateX(15%);
+    }
+    .segunda-linha-habilidades-mobile{
+    transform: translate(-4%);
+    }
 }
