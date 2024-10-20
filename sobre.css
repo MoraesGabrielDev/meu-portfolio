@@ -44,9 +44,22 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .titulo_sobre_mim{
     font-size: 2em;
+  }
+  .descrição_sobre_mim{
+    font-size: 1.2em;
+    margin: 2em 15em;
+  }
+  .descriçao_mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo_sobre_mim{
+    font-size: 1.5em;
   }
 
   .descrição_sobre_mim{
@@ -59,8 +72,25 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .descrição_sobre_mim{
+    font-size: 1.2em;
+    margin: 2em 3em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .descrição_sobre_mim{
+    font-size: 1em;
+    margin: 2em 2em;
+  }
+  .titulo_sobre_mim{
+    font-size: 1.3em;
+  }
+}
+
 @media screen and (max-width:430px) {
-  .titulo_sobre_mim{
+  .titulo_sobre_mim_mobile{
     font-size: 1.3em;
     justify-content: center;
     
@@ -85,34 +115,6 @@
   
 }
 
-
-@media screen and (max-width: 428px) {
-  .titulo_sobre_mim{
-    font-size: 1.3em;
-    justify-content: center;
-    
-  }
-
-  .descrição_sobre_mim{
-    display: none;
-  }
-  
-  .descriçao_mobile{
-    display: block;
-    color: var(--branco);
-    font-family: var(--fonte-textos);
-    color: var(--branco);
-    font-size: 1em;
-    margin: 2em 0 2em 1.7em;
-  }
-
-  .lista_habilidades i{
-    display: none;
-  }
-  
-  
- 
-}
 
 @media screen and (max-width: 390px) {
   .descriçao_mobile{
