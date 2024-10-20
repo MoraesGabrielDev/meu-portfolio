@@ -12,7 +12,7 @@
 .botoes_capa{
   display: flex;
   flex-direction: column;
-  margin-left: 8em;
+ 
 }
 
 .bold_capa{
@@ -68,6 +68,7 @@ margin-right: 1em;
 
   .capa{
     margin: 10em 10em;
+   
   }
   .imagem_capa.reveal{
     width: 40%;
@@ -83,20 +84,14 @@ margin-right: 1em;
     margin: 1em 0 1em 0;
   }
 
-  .botoes_capa{
-    margin-left: 7em;
-  }
+ 
 }
 
-
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 1440px) {
   .capa{
-    margin: 10em 10em;
+    border-width: 10em 12em;
   }
-  .imagem_capa.reveal{
-    width: 45%;
-  }
+  
 
   .titulo_capa{
     font-size: 1.8em;
@@ -108,71 +103,75 @@ margin-right: 1em;
     margin: 1em 0 1em 0;
   }
 
-  .botoes_capa{
-    margin-left: 7em;
+
+ 
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .capa{
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .titulo_capa{
+    font-size: 1.5em;
+  }
+
+  .link_capa{
+    padding: 0.1em;
+    font-size: 1em;
+    margin: 1em 0 1em 0;
+  }
+
+  .imagem_capa.reveal{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .capa{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo_capa{
+    font-size: 1.3em;
+  }
+
+  .capa{
+    margin: 10em 2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .link_capa{
+    padding: 0.1em;
+    margin: 0.5em 0 1em 0;
   }
 }
 
 
 @media screen and (max-width: 430px) {
-  .imagem_capa.reveal{
-    display: none;
-   }
- 
-   .titulo_capa{
-     font-size: 1.35em;
-   }
-   
-   .capa{
-     margin: 8em 0em 8em 0;
-     transform: translateX(-12%);
-   }
- 
-   .link_capa{
-     padding: 0.1em;
-     font-size: 0.9em;
-     margin: 1.5em 0 1.5em 0;
-   }
+  .link_capa{
+    padding: 0.1em;
+    margin: 0.5em 0 1em 0;
+  }
  }
 
 
-
-
-@media screen and (max-width: 428px) {
-  .imagem_capa.reveal{
-   display: none;
-  }
-
-  .titulo_capa{
-    font-size: 1.35em;
-  }
-  
-  .capa{
-    margin: 8em 0em 8em 0;
-    transform: translateX(-14%);
-  }
-
+@media screen and (max-width: 390px) {
   .link_capa{
     padding: 0.1em;
-    font-size: 0.9em;
-    margin: 1.5em 0 1.5em 0;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .capa{
-    margin: 8em 0em 8em 0;
-    transform: translateX(-10%);
-  }
-
-  .titulo_capa{
-    font-size: 1.1em;
+    margin: 0.5em 0 1em 0;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .capa{
-    margin: 8em 0em 8em 0;
-    transform: translateX(-13%);
+  .link_capa{
+    padding: 0.1em;
+    margin: 0.5em 0 1em 0;
   }
 }
